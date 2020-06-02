@@ -1,3 +1,7 @@
+variable "aws_profile" {
+  default = "david74"
+}
+
 variable "region" {
   default = ""
 }
