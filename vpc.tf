@@ -60,7 +60,8 @@ resource "aws_nat_gateway" "ngw" {
 # VPC Endpoint for S3
 ######################
 data "aws_vpc_endpoint_service" "s3" {
-  service = "s3"
+  service      = "s3"
+  service_type = "Gateway"
 }
 
 resource "aws_vpc_endpoint" "s3" {
